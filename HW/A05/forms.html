@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test website forms</title>
+</head>
+
+<style>
+
+    body {
+        background-image: url(http://www.mysoti.com/img/user/speedstatus/product/web/631627/631627_show_default.png);o
+    }
+
+    #header {
+        text-align:center;
+        border-bottom-style:solid;
+        height:25vh;
+        overflow:hidden;
+    }
+
+    #navbar {
+        height:50px;
+        background-color:lightblue;
+        border-bottom-style:solid;
+        border-left-style:solid;
+        border-right-style:solid;
+    }
+
+    #sidebar {
+        width:25%;
+        float:left;
+        padding:20px;
+    }
+
+    #main {
+        border-left-style:solid;
+        float:left;
+        padding:20px;
+    }
+
+    #footer {
+        background-color:white;
+        text-align:center;
+        border-style:solid;
+        height:50px;
+        width:100%;
+        overflow:hidden;
+    }
+</style>
+
+<body>
+    <div id="header">
+            <header>
+                    <h1>Test Website</h1>
+            </header>
+    </div>
+    <div id="navbar">
+            <a href="main.html">main</a>
+            <a href="forms.html">forms</a>
+            <a href="CSStest.html">HTML5 test page</a>
+    </div>
+    <div id="sidebar">
+            <h3>Sidebar</h3>
+            <p>
+                 HTML supports several different types of input
+            </p>
+    </div>
+    <div id="main"">
+
+            <h2>
+                    Forms Page
+            </h2>
+
+            <form action="forms.html" method="get">
+
+                what is today?
+                <input type="date" name="today"> <br>
+
+                <p></p>
+
+                Your favorite day?:
+                <input type="datetime" name="bdaytime"> <br>
+
+                <p></p>
+
+                Favorite Month?
+                <input type="month" name="month"> <br>
+
+                <p></p>
+
+                What is the color of your shirt?
+                <input type="color" names="favcolor">
+                <br>
+
+                <p></p>
+
+                Input your email!
+                <input type="email" name="email"> <br>
+
+                <p></p>
+
+                Input a URL
+                <input type="url" name="page"> <br>
+
+                <p></p>
+
+                Input a number
+                <input type="number" name="int"> <br>
+
+                <p></p>
+
+                Move the bar!
+                <input type="range" name="rangednum" min="0" max="10"> <br>
+
+                <p></p>
+
+                Search
+                <input type="search" name="search"> <br>
+
+                <p></p>
+
+                    <p>Submit putton to send form data</p>
+
+                    <input type="submit" value="Submit">
+            </form>
+    </div>
+    <div id="footer">
+            <p>Copyright Eric Moriyasu</p>
+    </div>
+
+</body>
+</html>
