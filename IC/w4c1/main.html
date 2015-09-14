@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+
+    #header {
+        border-bottom-style:solid;
+        height:10vh;
+    }
+
+    #main {
+        border-bottom-style:solid;
+        height:50vh;
+    }
+    #tab {
+        height:40vh;
+        border-right-style:solid;
+    }
+    #tab2 {
+        height:40vh;
+        border-right-style:solid;
+    }
+
+    #footer {
+        height:50px;
+        border-top-style:solid;
+        border-bottom-style:solid;
+        overflow:hidden;
+    }
+
+
+</style>
+
+<script>
+    function buttonClick() {
+        document.getElementById("tab").style.backgroundImage = "url('http://exude.myspew.com/albums/geek/G7/the%20computer%20-%20there%20is%20no%20escape.jpg')";
+    }
+
+    function mouseEnter() {
+        document.getElementById("tab2p").style.color = "black";
+    }
+    function mouseOut() {
+        document.getElementById("tab2p").style.color = "white";
+    }
+
+    function formSubmit() {
+            document.getElementById("text1").innerHTML = "Success!";
+    }
+
+</script>
+
+<body>
+    <div class="container">
+            <div class="col-xs-12" id="header">
+                    <h1>header</h1>
+            </div>
+            <div class="col-xs-12" id="main">
+                    <form id="form1">
+                        Enter text: <input type="text" id="input1">
+                    </form>
+
+                    <p id="text1"></p>
+                    <button onclick="formSubmit()">submit</button>
+            </div>
+            <div class="col-xs-6" id="tab">
+                <button onclick="buttonClick()">I am here, click me</button>
+            </div>
+            <div class="col-xs-6" id="tab2" onmouseenter="mouseEnter()" onmouseout="mouseOut()">
+                    <p id="tab2p" style="color:white">Hello World</p>
+            </div>
+            <div class="col-xs-12" id="footer">
+                    <p>footer</p>
+            </div>
+    </div>
+</body>
+</html>
