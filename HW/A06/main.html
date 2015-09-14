@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap</title>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+    <!--
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    -->
+    <![endif]-->
+</head>
+
+<style>
+
+    #header {
+        height:25vh;
+        border-bottom-style:Solid;
+        overflow:hidden;
+    }
+
+    #sidebar {
+        padding:20px;
+        float:left;
+    }
+
+    #nav {
+        padding:20px;
+    }
+
+    #footer {
+        text-align:center;
+        height:50px;
+        border-bottom-style:solid;
+        border-top-style:solid;
+        overflow:hidden;
+    }
+
+    #maintab {
+        border-left-style:solid;
+        float:right;
+    }
+
+    #formtab {
+        border-left-style:solid;
+        float:right;
+    }
+
+    #pagetab {
+        border-left-style:solid;
+        float:right;
+    }
+
+    #googlefont {
+        font-family: 'Tangerine', serif;
+        font-size:60px;
+    }
+
+</style>
+
+
+<body>
+<div class="container">
+        <div class="col-xs-12" id="header">
+                <h1>Hellow World</h1>
+        </div>
+    <!--
+        <div class="col-xs-3" id="sidebar">
+                <p>helloworld</p>
+        </div>
+    -->
+        <div class="col-xs-12" id="nav">
+            <div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#main" aria-controls="home" role="tab" data-toggle="tab">main</a></li>
+                    <li role="presentation"><a href="#forms" aria-controls="profile" role="tab" data-toggle="tab">forms</a></li>
+                    <li role="presentation"><a href="#page" aria-controls="messages" role="tab" data-toggle="tab">page</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="main">
+                                <div class="col-xs-3" id="sidebar">
+                                        <p>helloworld</p>
+                                </div>
+                                <div class="col-xs-9" id="maintab">
+                                        <h2>Buttons</h2>
+
+                                        <button type="button" class="btn btn-default">
+                                                button
+                                         </button>
+                                       <button type="button" class="btn btn-primary">
+                                                blue button
+                                      </button>
+                                      <button type="button" class="btn btn-success">
+                                               green button
+                                      </button>
+                                      <button type="button" class="btn btn-info">
+                                            light blue button
+                                      </button>
+                                      <button type="button" class="btn btn-warning">
+                                             yellow button
+                                      </button>
+                                      <button type="button" class="btn btn-danger">
+                                            red button
+                                      </button>
+
+                                      <h2>Button group</h2>
+
+                                    <div class="btn-group">
+                                            <button type="button" class="btn btn-primary">Button 1</button>
+                                            <button type="button" class="btn btn-primary">Button 2</button>
+                                            <button type="button" class="btn btn-primary">Button 3</button>
+                                    </div>
+                                </div>
+                        </div>
+                    <div role="tabpanel" class="tab-pane" id="forms">
+                        <div class="col-xs-3" id="sidebar">
+                            <p>helloworld</p>
+                        </div>
+                        <div class="col-xs-9" id="formtab">
+                            <div class="form-group">
+                                    <label for="text1">Inout text:</label>
+                                    <input type="text" class="form-control" id="text1">
+
+                                    <div class="checkbox">
+                                            <label><input type="checkbox" value="">Option 1</label>
+                                    </div>
+                                    <div class="checkbox">
+                                            <label><input type="checkbox" value="">Option 2</label>
+                                    </div>
+                                    <div class="checkbox">
+                                            <label><input type="checkbox" value="">Option 3</label>
+                                    </div>
+                            </div>
+                            <div class="form-group-horizontal">
+                                    <label for="text2">Input text:</label>
+                                    <input type="text" class="form-control" id="text2">
+
+
+                                     <div class="checkbox">
+                                            <label><input type="checkbox" value="">Option 1</label>
+                                     </div>
+                                     <div class="checkbox">
+                                            <label><input type="checkbox" value="">Option 2</label>
+                                     </div>
+                                     <div class="checkbox">
+                                             <label><input type="checkbox" value="">Option 3</label>
+                                     </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="page">
+                        <div class="col-xs-3" id="sidebar">
+                            <p>helloworld</p>
+                        </div>
+                        <div class="col-xs-9" id="pagetab">
+                            <h2>Responsive images</h2>
+                            <p id="googlefont">Google Font</p>
+                            <img src="http://www.vapor-rage.com/wp-content/uploads/2014/05/sample.jpg" class="img-responsive" alt="Sample" width="800">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    <div class="col-xs-12" id="footer">
+        <p>By Eric Moriyasu</p>
+    </div>
+
+</div>
+
+</body>
+</html>
