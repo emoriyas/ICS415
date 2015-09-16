@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>process</title>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</head>
+
+<script>
+        function process() {
+            var line = window.location.href;
+            String(line);
+            var ch;
+            alert(line);
+
+            ch = line.charAt[5];
+            alert(ch);
+
+            for (i = 0; i < line.length; i++) {
+                    ch = line.charAt[i];
+                    alert(ch);
+                    //if(line.charAt[i] = '=') {
+                            //alert(line.charAt[i]);
+                    //}
+            }
+
+            document.getElementById("name").innerHTML = line;
+            document.getElementById("add").innerHTML = line;
+            document.getElementById("phonenum").innerHTML = line;
+            //$("#name") = "hi";
+
+            //table = document.getElementById("tab").getElementsbyTagName("tr");
+            //tr.getElementsByTagName("td")[0].innerHTML = "change me"
+
+
+
+        }
+</script>
+
+
+<body onload="process()">
+
+<table id="tab" border="1">
+        <tr>
+                <Td><b>username</b></Td>
+                <Td id="name">a</Td>
+        </tr>
+        <tr>
+                <Td><b>address</b></Td>
+                <Td id="add">a</Td>
+        </tr>
+        <tr>
+                <Td><b>phone number</b></Td>
+                <Td id="phonenum">a</Td>
+        </tr>
+</table>
+
+</body>
+</html>
