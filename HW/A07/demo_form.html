@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <script>
+
+        function validateForm() {
+            var un = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            var pass2 = document.getElementById("confirm").value;
+            var error = false;
+            var errorLine;
+
+            if(un == "") {
+                error = true;
+                errorLine = "Input username";
+                document.getElementById("username").style.borderColor = "red";
+            }
+            if(email == "") {
+                if(error){
+                    errorLine = errorLine + ", email";
+                }
+                else {
+                    error = true;
+                    errorLine = "Input Email";
+                }
+                document.getElementById("email").style.borderColor = "red";
+            }
+            if(pass == "") {
+                if(error){
+                    errorLine = errorLine + ", password";
+                }
+                else {
+                    error = true;
+                    errorLine = "Input password";
+                }
+                document.getElementById("password").style.borderColor = "red";
+            }
+            if(pass2 == "") {
+                if(error){
+                    errorLine = errorLine + ", password confirmation";
+                }
+                else {
+                    error = true;
+                    errorLine = "Input password confirmation";
+                }
+                document.getElementById("confirm").style.borderColor = "red";
+            }
+
+            if(pass != pass2) {
+                if(error){
+                    errorLine = errorLine + ", Passwords not matching";
+                }
+                else {
+                    error = true;
+                    errorLine = "Passwords not matching";
+                }
+            }
+
+            if(error) {
+                document.getElementById("demo").innerHTML = errorLine;
+                return(false);
+            }
+
+
+        }
+
+    </script>
+
+</head>
+
+
+
+<body>
+
+<form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
+    <p id="demo"></p>
+
+    <div class="form-group">
+        <label for="username">User name: </label>
+        <input type="text" name="name" id="username">
+    </div>
+    <div class="form-group">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+    </div>
+    <div class="form-group">
+        <label for="confirm">Confirm Password: </label>
+        <input type="password" name="confirm" id="confirm">
+    </div>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+
+</html>
