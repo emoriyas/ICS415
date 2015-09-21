@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+    #header {
+        border-bottom-style:solid;
+        height:10vh;
+    }
+
+    #main {
+        border-bottom-style:solid;
+        height:50vh;
+    }
+    #tab {
+        height:40vh;
+        border-right-style:solid;
+    }
+    #tab2 {
+        height:40vh;
+        border-right-style:solid;
+    }
+
+    #footer {
+        height:50px;
+        border-top-style:solid;
+        border-bottom-style:solid;
+        overflow:hidden;
+    }
+</style>
+
+
+<script>
+
+$(document).ready(function() {
+        $("p").click(function(){
+                $(this).hide();
+        });
+});
+
+$(document).ready(function(){
+    $("#tab2").mouseenter(function(){
+        $("#tab2").css("background-color", "yellow");
+    });
+    $("#tab2").mouseleave(function(){
+        $("#tab2").css("background-color", "white");
+    });
+});
+
+</script>
+
+
+<body>
+
+<div class="container">
+    <div class="col-xs-12" id="header">
+        <h1>header</h1>
+    </div>
+    <div class="col-xs-12" id="main">
+        <p>Hello World!</p>
+        <p>Hi world!</p>
+        <p>goodbye world!</p>
+    </div>
+    <div class="col-xs-6" id="tab">
+        <button onclick="buttonClick()" id=button1>I am here, click me</button>
+    </div>
+    <div class="col-xs-6" id="tab2">
+        <p id="tab2p">Hello World</p>
+    </div>
+    <div class="col-xs-12" id="footer">
+        <p>footer</p>
+    </div>
+</div>
+
+</body>
+</html>
