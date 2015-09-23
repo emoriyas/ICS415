@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+    #header {
+        border-bottom-style:solid;
+        height:10vh;
+    }
+
+    #tab1 {
+        height:50vh;
+        border-style:solid;
+        float:left;
+    }
+    #tab2 {
+        height:50vh;
+        border-style:solid;
+    }
+    #tab3 {
+        height:50vh;
+        border-style:solid;
+        float:right;
+    }
+
+</style>
+
+
+<script>
+
+function buttonClick1() {
+        $("#tab1").toggle();
+}
+function buttonClick2() {
+    $("#tab2").toggle();
+}
+function buttonClick3() {
+    $("#tab3").toggle();
+}
+
+$(document).ready(function(){
+    $("button").click(function() {
+        $("#tab1").load("HelloWorld.txt");
+    });
+});
+
+
+</script>
+
+
+<body>
+
+<div class="container">
+    <div class="col-xs-12" id="header">
+        <h1>header</h1>
+        <button onclick="buttonClick1()" id="toggle1">toggle1</button>
+        <button onclick="buttonClick2()" id="toggle2">toggle2</button>
+        <button onclick="buttonClick3()" id="toggle3">toggle3</button>
+    </div>
+    <div class="col-xs-4" id="tab1">
+        <button>hai</button>
+        <p>hi!</p>
+    </div>
+    <div class="col-xs-4" id="tab2">
+        <p>aa</p>
+    </div>
+    <div class="col-xs-4" id="tab3">
+        <p>bb</p>
+    </div>
+</div>
+
+</body>
+</html>
