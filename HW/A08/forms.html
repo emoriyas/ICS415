@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="myScript.js"></script>
+</head>
+
+<style>
+    #header {
+        border-bottom-style:solid;
+        height:10vh;
+    }
+    #forms {
+        border-bottom-style:solid;
+    }
+    #output {
+        border-bottom-style:solid;
+    }
+</style>
+
+
+<body>
+
+<div>
+
+    <div class="col-xs-12" id="header">
+        <h1>Header</h1>
+    </div>
+    <div class="col-xs-12" id="forms">
+        <form onsubmit="linkCount()">
+            URL:
+            <input type="url" value="page" id="link"> <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    <div class="col-xs-12" id="output">
+            <p id="out"></p>
+    </div>
+
+</div>
+
+
+</body>
+</html>

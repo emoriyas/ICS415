@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="myScript.js"></script>
+</head>
+
+<style>
+        #header {
+                border-bottom-style:solid;
+                height:10vh;
+        }
+        #faq {
+                border-bottom-style:solid;
+        }
+</style>
+
+<body>
+
+<div>
+    <div class="col-xs-12" id="header">
+        <h1>Header</h1>
+    </div>
+    <div class="col-xs-12" id="faq">
+
+            <h4>Frequently Asked Questions</h4>
+
+            <ul>
+                    <li id="q1" onclick="faqToggle('q1', 'a1', 1)">Question 1(+)</li>
+                    <li id="q2" onclick="faqToggle('q2', 'a2' , 2)">Question 2(+)</li>
+                    <li id="q3" onclick="faqToggle('q3', 'a3', 3)">Question 3(+)</li>
+                    <li id="q4" onclick="faqToggle('q4', 'a4', 4)">Question 4(+)</li>
+                    <li id="q5" onclick="faqToggle('q5', 'a5', 5)">Question 5(+)</li>
+            </ul>
+    </div>
+
+</div>
+
+</body>
+
+
+
+</html>
