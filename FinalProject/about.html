@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+    <!--
+    Use these if there is no organic bootstrap
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    -->
+</head>
+
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>About</h1> 
+    </div>
+    <div class="row">
+        <div class="col-sm-4" id="nav">
+            <input type="button" class="btngold" onclick="location.href='./home.php';" value="Home Page" />
+            <input type="button" class="btngold" onclick="location.href='./about.html';" value="About" />
+            <input type="button" class="btngold" onclick="location.href='./create_student.html';" value="New Student" />
+            <input type="button" class="btngold" onclick="location.href='./create_review.html';" value="New Review" />
+            <input type="button" class="btngold" onclick="location.href='./logout.php';" value="Log Out" />
+        </div>
+        
+        <div class="col-sm-8" id="maincont">
+            <h3>Technology used to build this site:</h3>
+            <ul>
+                <li>Hosting through Amazon Web Services</li>
+                <li>Written in Sublime Text 3 and IntelliJ</li>
+                <li>Uploaded by Filezilla</li>
+                <li>Google Drive for version control and collaborating</li>
+                <li>Coded in html, with php for the forms and logic, and a bit of javascript around the buttons</li>
+                <li>PhpMyAdmin for the database management, with its internal mySQL. (This caused a few problems)</li>
+            </ul>
+        </div>
+    </div>
+</div>
